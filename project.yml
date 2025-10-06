@@ -1,0 +1,39 @@
+---
+settings:
+  name: Google Cloud Storage
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+sidebar:
+  entries:
+  - title: Google 雲端儲存文件
+    url: "/index.html"
+  - title: 發行說明
+    url: "/whats-new.html"
+  - title: 開始
+    entries:
+    - title: 查看您的 Google Cloud Storage 儲存桶
+      url: "/task-viewing-gcp-storage.html"
+  - title: 管理 Google Cloud Storage 儲存桶
+    entries:
+    - title: 新增儲存桶
+      url: "/task-add-gcp-bucket.html"
+    - title: 更改儲存桶設置
+      url: "/task-change-gcp-bucket-settings.html"
+    - title: 將NetApp資料服務與 Google Cloud Storage 儲存桶結合使用
+      url: "/task-gcp-enable-data-services.html"
+  - title: 知識和支持
+    entries:
+    - title: 註冊以獲得支持
+      url: "/task-support-registration.html"
+    - title: 獲取協助
+      url: "/task-get-help.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: Storage Management
+  repo: storage-management-family

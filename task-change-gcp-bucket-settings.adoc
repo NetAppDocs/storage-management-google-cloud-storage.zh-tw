@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-change-gcp-bucket-settings.html 
+keywords: google cloud storage buckets, google cloud storage, edit buckets, change buckets 
+summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。 
+---
+= 變更 Google Cloud Storage 儲存桶設置
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。
+
+請注意，您無法變更儲存桶名稱、Google 項目或保護設定。
+
+您可以變更的儲存桶屬性包括：
+
+* 儲存桶中所有未來物件的儲存類別。
+* 您可以選擇為儲存桶中的物件新增、編輯和刪除標籤。
+* Turbo 複製模式 - 僅當儲存桶位於雙區域位置。
+
+
+您可以透過點擊NetApp控制台直接變更這些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]然後對儲存桶進行*編輯儲存桶詳細資料*。
+
+image:screenshot-edit-gcp-bucket.png["此螢幕截圖顯示如何選擇「編輯儲存桶詳細資料」按鈕來編輯儲存桶屬性。"]
+
+
+
+== 變更儲存類別
+
+儲存類別部分僅允許您進行某些變更：
+
+* 如果在建立儲存桶時選擇了_Autoclass_，則可以停用Autoclass並選擇其他儲存類別。
+* 如果在建立儲存桶時選擇了任何其他儲存類，則可以變更為任何其他儲存類別 - 除_Autoclass_之外。
+
+
+屬於不同類別的物件將保留在該類別中，但任何新物件都將使用新的類別設定。
+
+
+
+== 新增或變更儲存桶中物件的標籤
+
+標籤是可用於將資源分組以識別應用程式、環境、區域、雲端提供者等的元資料。標籤由一個鍵和一個值組成。您可以為儲存桶新增標籤，以便在將物件新增至儲存桶時將標籤套用至物件。您也可以變更和刪除標籤和標籤值。
+
+新增或編輯標籤後，按一下「套用」以儲存變更。如果您想要新增更多標籤，請點選*新增標籤*。每個儲存桶最多可以添加 10 個標籤。
+
+
+
+== 變更是否在雙區域位置啟用 Turbo 複製
+
+如果儲存桶位於雙區域位置，您可以啟用或停用渦輪複製模式。  「Turbo 複製」可讓您在 15 分鐘內保證所有新寫入物件的地理冗餘。
+
+建立儲存桶後，其他位置詳細資訊均無法變更。

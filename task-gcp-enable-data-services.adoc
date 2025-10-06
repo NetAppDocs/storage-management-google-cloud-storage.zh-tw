@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-gcp-enable-data-services.html 
+keywords: google buckets, google storage, google cloud storage working environment, google cloud storage buckets, system 
+summary: 當您在NetApp控制台中發現 Google Cloud Storage 儲存桶時，您可以使用NetApp資料服務進行備份、分層和資料同步。 
+---
+= 將NetApp資料服務與 Google Cloud Storage 儲存桶結合使用
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您在NetApp控制台中發現 Google Cloud Storage 儲存桶時，您可以使用NetApp資料服務進行備份、分層和資料同步。
+
+* 使用* NetApp備份和還原*將資料從本機ONTAP和Cloud Volumes ONTAP系統備份到 Google Cloud 物件儲存。
++
+首先，前往系統頁面，然後將本機ONTAP或Cloud Volumes ONTAP系統拖曳到您的 Google Cloud Storage 系統上。
+
++
+https://docs.netapp.com/us-en/data-services-backup-recovery/concept-ontap-backup-to-cloud.html["詳細了解如何將ONTAP資料備份到 Google Cloud Storage"^] 。
+
+* 使用 * NetApp Cloud Tiering* 將非活動資料從本機ONTAP叢集分層到 Google Cloud 物件儲存。
++
+首先，前往系統頁面，然後將本機ONTAP系統拖曳到您的 Google Cloud Storage 系統上。
+
++
+https://docs.netapp.com/us-en/data-services-cloud-tiering/task-tiering-onprem-gcp.html["詳細了解如何將ONTAP資料分層到 Google Cloud Storage"^] 。
+
+* 使用* NetApp Copy and Sync* 將資料同步到 Google Cloud Storage 儲存桶或從 Google Cloud Storage 儲存桶同步資料。
++
+首先，前往系統頁面並將來源系統拖曳到目標系統上。您的 Google Cloud Storage 系統可以是來源，也可以是目標。
+
+
+
+您也可以選擇您的 Google 雲端儲存系統，然後按一下「服務」面板中的「複製和同步」以將資料同步到雲端儲存桶或從雲端儲存桶同步資料。
+
+https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html["了解有關NetApp複製和同步服務的更多信息"^] 。

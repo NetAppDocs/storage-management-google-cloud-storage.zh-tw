@@ -1,0 +1,11 @@
+= 能夠從BlueXP添加新儲存桶並管理現有儲存桶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+
+
+=== 能夠從BlueXP添加新儲存桶並管理現有儲存桶
+
+您可以在BlueXP Canvas 上查看 Google Cloud Storage 儲存桶一段時間。現在您可以直接從BlueXP新增新的儲存桶並變更現有儲存桶的屬性。 https://docs.netapp.com/us-en/storage-management-google-cloud-storage/task-add-gcp-bucket.html["了解如何新增的 Google Cloud Storage 儲存桶"] 。

@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: task-add-gcp-bucket.html 
+keywords: google cloud storage buckets, google cloud storage, add buckets 
+summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。 
+---
+= 新增 Google Cloud Storage 儲存桶
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。
+
+.步驟
+. 在系統頁面中，雙擊 Google Cloud Storage 系統以查看 Google Cloud Storage 儲存桶概覽頁面，然後按一下 *新增儲存桶*。
++
+將顯示「新增儲存桶」頁面。
+
+. 在「項目詳情」部分輸入所需資訊。
++
+** *儲存桶名稱* - 輸入您想要使用的儲存桶名稱。 https://cloud.google.com/storage/docs/buckets#naming["請參閱 Google Cloud 文件以了解命名要求"^] 。
+** *Google 專案* - 選擇將成為儲存桶擁有者的 Google 專案。這可以是部署控制台代理的主要項目，也可以是不同的項目。如果您在下拉清單中沒有看到任何其他項目，則表示您尚未將NetApp控制台服務帳戶與其他項目關聯。進入Google Cloud控制台，開啟IAM服務，選擇項目。將具有NetApp控制台角色的服務帳戶新增至該專案。您需要對每個項目重複此步驟。注意：這是您為NetApp控制台設定的服務帳戶， https://docs.netapp.com/us-en/console-setup-admin/task-set-up-permissions-google.html#set-up-permissions-for-the-connector["如本頁所述"^] 。
+** *標籤* - 標籤是您的 Google Cloud 資源的元資料。建立儲存桶時，最多可新增 10 個標籤鍵值對。https://cloud.google.com/compute/docs/labeling-resources["有關標籤的更多信息，請參閱 Google Cloud 文檔"^] 。
+
+
+. 在「位置」部分中，選擇將建立儲存桶的位置類型和區域（或多個區域）。您可以從三種不同類型的位置中進行選擇。
++
+[cols="35,65"]
+|===
+| 如果您選擇“位置類型”... | 然後選擇... 
+
+
+| 地區 | 來自「可用區域」欄位的單一區域。 
+
+
+| 雙區域  a| 
+從「可用位置」欄位中選擇地理位置（單一大洲），然後在「可用區域」欄位中選擇兩個區域。
+
+如果您希望在 15 分鐘內保證所有新寫入物件的地理冗餘，則可以啟用「Turbo 複製」。
+
+
+
+| 多區域 | 來自「可用多區域」欄位的地理多區域。 
+|===
++
+請注意，一旦您上傳所有雲端儲存數據，它就會在至少一個地理位置的至少兩個區域內冗餘。 https://cloud.google.com/storage/docs/locations["有關儲存桶位置的更多信息，請參閱 Google Cloud 文檔"^] 。
+
+. 在_儲存類別_部分中，選擇儲存桶中物件使用的儲存類別。您可以從四個儲存類別中進行選擇，也可以選擇“Autoclass”，Google 會根據需要調整類別。
++
+** *標準* - 最適合頻繁存取的資料（「熱」資料）或僅儲存短時間的資料。
+** *Nearline* - 一種低成本、高耐用性的儲存服務，用於儲存不經常存取的資料。
+** *Coldline* - 一種非常低成本、高度耐用的儲存服務，用於儲存不經常存取的資料。
+** *存檔*－用於資料存檔、線上備份和災難復原的成本最低、高度耐用的儲存服務。
+** *自動分類* - 根據每個物件的存取模式自動將儲存桶中的物件轉換為適當的儲存類別。
++
+每個儲存類別的成本和檢索費用都不同。 https://cloud.google.com/storage/docs/storage-classes["有關儲存類別的更多信息，請參閱 Google Cloud 文檔"^] 。
+
+
+
+. 在「保護」部分中，選擇是否要使用任何資料保護工具來保護儲存桶中的對象，或使用任何資料加密配置來保護對資料的存取。
++
+*資料保護工具*
+
++
+** *無* - 預設情況下，儲存桶上未啟用任何保護工具。
+** *物件版本控制* - 物件版本控制是一種將物件的多個版本保存在同一個儲存桶中的方法。每次更新、取代或刪除活動物件版本時，儲存桶都會保留非目前物件版本 - 持續維護物件的受保護版本。當您選擇「物件版本控制」時，您可以指定兩個選項：
++
+*** *每個物件的最大版本數* - 輸入每個將要建立的非目前版本的數量。
+*** *非目前版本過期時間* - 輸入刪除舊非目前物件的天數。
+
+
+** *保留策略* - 保留策略可確保儲存桶中的所有目前和未來物件在達到您在保留策略中定義的年齡之前不能被刪除或替換。當您選擇「保留策略」時，您可以指定兩個選項：
++
+*** *保留物件* - 輸入將保留物件的秒數、天數、月數或年數。
+*** *時間範圍* - 選擇時間以秒、天、月或年為單位。
++
+物件版本控制和保留策略保護工具不能同時啟用。請參閱 Google Cloud 文件 https://cloud.google.com/storage/docs/object-versioning["有關對象版本控制的更多信息"^]， 和 https://cloud.google.com/storage/docs/bucket-lock["有關保留策略的更多信息"^]。
+
+
+
+
+
++
+*資料加密工具*
+
++
+** *Google 管理的加密金鑰* - 預設情況下，Google 管理的加密金鑰用於加密您的資料。
+** *客戶管理的加密金鑰* - 您可以使用自己的客戶管理金鑰進行資料加密，而不是使用預設的 Google 管理的加密金鑰。如果您打算使用自己的客戶管理金鑰，則需要先建立它們，以便您可以在此頁面中選擇金鑰。
++
+鍵可以與儲存桶位於同一個專案中，也可以選擇不同的項目。
+
++
+請參閱 Google Cloud 文件 https://cloud.google.com/storage/docs/encryption/default-keys["有關 Google 管理的加密金鑰的更多信息"^]， 和 https://cloud.google.com/storage/docs/encryption/customer-managed-keys["有關客戶管理加密金鑰的更多信息"^]。
+
+
+
+. 點選“*新增*”，儲存桶即建立完成。
+
