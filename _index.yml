@@ -1,9 +1,9 @@
 ---
 indexpage:
   title: Google 雲端儲存文件
-  summary: 開始透過NetApp Console 使用 Google Cloud Storage。
+  summary: 開始使用 Google Cloud Storage 和NetApp Console。
   keywords: google cloud storage, bluexp, system, netapp console
-  lead: 開始透過NetApp Console 使用 Google Cloud Storage。
+  lead: 開始使用 Google Cloud Storage 和NetApp Console。
   tiles:
   - title: 開始
     links:
@@ -19,13 +19,13 @@ indexpage:
       url: task-gcp-enable-data-services.html
   - title: 更多資訊
     links:
-    - title: 用於NetApp Console 以外的管理的 Google Cloud Storage 文檔
+    - title: 用於NetApp Console之外的管理的 Google Cloud Storage 文檔
       url: https://cloud.google.com/storage/docs/creating-buckets
   - title: 部落格和社區
     links:
-    - title: NetApp控制台
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetApp資料服務
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetApp社群
       url: https://community.netapp.com/

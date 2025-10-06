@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-change-gcp-bucket-settings.html 
 keywords: google cloud storage buckets, google cloud storage, edit buckets, change buckets 
-summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。 
+summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp Console變更某些儲存桶屬性。 
 ---
 = 變更 Google Cloud Storage 儲存桶設置
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時�
 
 
 [role="lead"]
-當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台變更某些儲存桶屬性。
+當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp Console變更某些儲存桶屬性。
 
 請注意，您無法變更儲存桶名稱、Google 項目或保護設定。
 
@@ -25,7 +25,7 @@ summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時�
 * Turbo 複製模式 - 僅當儲存桶位於雙區域位置。
 
 
-您可以透過點擊NetApp控制台直接變更這些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]然後對儲存桶進行*編輯儲存桶詳細資料*。
+您可以透過點擊NetApp Console直接變更這些儲存桶設置image:button-horizontal-more.gif["三個點更多按鈕"]然後對儲存桶進行*編輯儲存桶詳細資料*。
 
 image:screenshot-edit-gcp-bucket.png["此螢幕截圖顯示如何選擇「編輯儲存桶詳細資料」按鈕來編輯儲存桶屬性。"]
 

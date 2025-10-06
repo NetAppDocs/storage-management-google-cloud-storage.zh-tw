@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-add-gcp-bucket.html 
 keywords: google cloud storage buckets, google cloud storage, add buckets 
-summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。 
+summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp Console新增其他儲存桶。 
 ---
 = 新增 Google Cloud Storage 儲存桶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時�
 
 
 [role="lead"]
-當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp控制台新增其他儲存桶。
+當您的 Google Cloud Storage 系統在「系統」頁面中可用時，您可以直接從NetApp Console新增其他儲存桶。
 
 .步驟
 . 在系統頁面中，雙擊 Google Cloud Storage 系統以查看 Google Cloud Storage 儲存桶概覽頁面，然後按一下 *新增儲存桶*。
@@ -24,7 +24,7 @@ summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時�
 . 在「項目詳情」部分輸入所需資訊。
 +
 ** *儲存桶名稱* - 輸入您想要使用的儲存桶名稱。 https://cloud.google.com/storage/docs/buckets#naming["請參閱 Google Cloud 文件以了解命名要求"^] 。
-** *Google 專案* - 選擇將成為儲存桶擁有者的 Google 專案。這可以是部署控制台代理的主要項目，也可以是不同的項目。如果您在下拉清單中沒有看到任何其他項目，則表示您尚未將NetApp控制台服務帳戶與其他項目關聯。進入Google Cloud控制台，開啟IAM服務，選擇項目。將具有NetApp控制台角色的服務帳戶新增至該專案。您需要對每個項目重複此步驟。注意：這是您為NetApp控制台設定的服務帳戶， https://docs.netapp.com/us-en/console-setup-admin/task-set-up-permissions-google.html#set-up-permissions-for-the-connector["如本頁所述"^] 。
+** *Google 專案* - 選擇將成為儲存桶擁有者的 Google 專案。這可以是部署控制台代理的主要項目，也可以是不同的項目。如果您在下拉清單中沒有看到任何其他項目，則表示您尚未將NetApp Console服務帳戶與其他項目關聯。進入Google Cloud控制台，開啟IAM服務，選擇項目。將具有NetApp Console角色的服務帳戶新增至該專案。您需要對每個項目重複此步驟。注意：這是您為NetApp Console設定的服務帳戶， https://docs.netapp.com/us-en/console-setup-admin/task-set-up-permissions-google.html#set-up-permissions-for-the-connector["如本頁所述"^] 。
 ** *標籤* - 標籤是您的 Google Cloud 資源的元資料。建立儲存桶時，最多可新增 10 個標籤鍵值對。https://cloud.google.com/compute/docs/labeling-resources["有關標籤的更多信息，請參閱 Google Cloud 文檔"^] 。
 
 
@@ -41,7 +41,7 @@ summary: 當您的 Google Cloud Storage 系統在「系統」頁面中可用時�
 | 雙區域  a| 
 從「可用位置」欄位中選擇地理位置（單一大洲），然後在「可用區域」欄位中選擇兩個區域。
 
-如果您希望在 15 分鐘內保證所有新寫入物件的地理冗餘，則可以啟用「Turbo 複製」。
+如果您希望在 15 分鐘內保證所有新寫入物件的地理冗餘，可以啟用「Turbo 複製」。
 
 
 
